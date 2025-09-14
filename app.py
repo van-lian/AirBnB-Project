@@ -406,6 +406,9 @@ if "lat" in df_filtered.columns and "long" in df_filtered.columns:
             'Premium': '#FF8C00',     # Dark orange
             'Luxury': '#DC143C'       # Crimson
         },
+        category_orders={
+        "price_category": ['Budget', 'Economy', 'Standard', 'Premium', 'Luxury']
+        },
         size_max=15,  # Maximum dot size
         opacity=0.7   # Semi-transparent to see overlapping dots
     )
@@ -414,20 +417,20 @@ if "lat" in df_filtered.columns and "long" in df_filtered.columns:
     fig_map.update_layout(
         height=600,  # Taller map for better exploration
         title=dict(x=0, 
-                   font=dict(size=16, color='#FFFFFF')),
+                font=dict(size=18, color='#FFFFFF')),  # Adjusted title font size
         showlegend=True,
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=1.02,
+            y=1.05,  # Slightly higher legend
             xanchor="right",
             x=1,
-            bgcolor="rgba(255,255,255,0.8)",
-            bordercolor="rgba(0,0,0,0.2)",
+            bgcolor="rgba(255, 255, 255, 0)",  # More transparent background for the legend
+            bordercolor="rgba(0, 0, 0, 0.2)",
             borderwidth=1
         )
     )
-    
+
     st.plotly_chart(fig_map, use_container_width=True)
     
     # Map statistics with better styling
