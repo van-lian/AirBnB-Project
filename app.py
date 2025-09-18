@@ -106,7 +106,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ----------------------------
-# Sidebar Filters with Better Styling
+# Sidebar Filters 
 # ----------------------------
 with st.sidebar:
     st.markdown('<div class="filter-header">🔍 FILTER OPTIONS</div>', unsafe_allow_html=True)
