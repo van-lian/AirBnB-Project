@@ -5,5 +5,5 @@ In this Project, I will try to make a machine learning model to predict **Season
 
 
 **Goal**:
-- Forecast future bookings or occupancy.
+- Predict future bookings or occupancy based on season.
 - Make an Interactive Dashboard for both model prediction & for user to gain insight
