@@ -8,6 +8,9 @@ In this Project, I will try to make a machine learning model to predict **Season
 - Predict future bookings or occupancy based on season.
 - Make an Interactive Dashboard for both model prediction & for user to gain insight
 
+
+Here are the Demo link: https://airbnb-project-3e2ja8drvr7xj6xobdcwh3.streamlit.app/
+
 ## Project Structure
 
 ```
