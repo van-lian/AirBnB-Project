@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 import pickle
-from prediction_utils import load_model, predict_bookings, get_seasonal_insights
+from app.prediction_utils import load_model, predict_bookings, get_seasonal_insights
 
 # ----------------------------
 # Page Configuration
